@@ -1,0 +1,33 @@
+.section1-right {
+ color: white;
+ p{
+  font-family: var(--text-font);
+ 
+}
+}
+
+@media screen and (min-width: 767px){
+  .container {
+
+    position: relative;
+  
+    .section1-right {
+      margin-top: -12rem;
+      position: sticky;
+      top: 200px;
+    }
+  }
+}
+
+@media screen and (min-width: 900px){
+  .container {
+
+    position: relative;
+  
+    .section1-right {
+      color: white;
+      margin-top: -49rem;
+      position: sticky;
+    }
+  }
+}

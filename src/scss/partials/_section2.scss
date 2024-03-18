@@ -1,0 +1,36 @@
+.section2-left {
+ color: white;
+p{
+  font-family: var(--text-font);
+ 
+}
+}
+
+@media screen and (min-width: 767px) {
+
+  .container {
+    position: relative;
+
+    .section2-left {
+      margin-top: -10rem;
+      position: sticky;
+      top: 200px;
+    }
+  }
+
+}
+
+@media screen and (min-width: 900px){
+  .container {
+
+    position: relative;
+  
+    .section2-left {
+      color: white;
+      margin-top: -48rem;
+      position: sticky;
+      top: 220px;
+    
+    }
+  }
+}

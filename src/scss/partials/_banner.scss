@@ -1,0 +1,122 @@
+.image-gallery {
+    width: 85%;
+    height: 20rem;
+    display: flex;
+    margin: auto;
+    position: relative;
+    // background-color: black;
+
+    img {
+        position: absolute;
+        width: 12rem;
+        height: 16rem;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+            rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+            rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+        &:nth-child(1) {
+            margin-left: 0;
+            margin-top: 0;
+            z-index: 1;
+        }
+
+
+        &:nth-child(2) {
+            margin-left: 10rem;
+            margin-top: 2rem;
+            z-index: 1;
+        }
+
+        &:nth-child(3) {
+            margin-left: 20rem;
+            margin-top: 0;
+            z-index: 2;
+        }
+
+        &:nth-child(4) {
+            margin-left: 30rem;
+            margin-top: 2rem;
+            z-index: 2;
+        }
+
+        &:nth-child(5) {
+            margin-left: 40rem;
+            margin-top: 0;
+            z-index: 2;
+        }
+
+        &:nth-child(6) {
+            margin-left: 50rem;
+            margin-top: 2rem;
+            z-index: 2;
+        }
+
+        &:nth-child(7) {
+            margin-left: 60rem;
+            margin-top: 0;
+            z-index: 2;
+        }
+
+        &:nth-child(8) {
+            margin-left: 70rem;
+            margin-top: 2rem;
+            z-index: 2;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .image-gallery {
+width: 73%;
+height: 15rem;
+        img {
+            position: absolute;
+            width: 10rem;
+            height: 12rem;
+            padding: 0;
+
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(1) {
+                display: none;
+            }
+
+            &:nth-child(5) {
+                margin-left: 0;
+                margin-top: 2rem;
+                z-index: 0;
+            }
+
+            &:nth-child(6) {
+                margin-left: 8rem;
+                margin-top: 0;
+                z-index: 1;
+            }
+
+            &:nth-child(7) {
+                margin-left: 16rem;
+                margin-top: 2rem;
+                z-index: 2;
+            }
+
+            &:nth-child(8) {
+                margin-left: 24rem;
+                margin-top: 0;
+                z-index: 2;
+                ;
+            }
+
+            &:nth-child(4) {
+                margin-left: 32rem;
+                margin-top: 2rem;
+                z-index: 3;
+                ;
+            }
+        }
+    }
+}
+@media screen and (max-width: 990px) {
+    .image-gallery {
+        display: none;
+    }
+}

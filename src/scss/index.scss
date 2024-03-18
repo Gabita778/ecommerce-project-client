@@ -1,0 +1,95 @@
+
+:root {
+  --primary-color: black;
+  --secondary-color: gray;
+  --background-color: white;
+  --box-shadow: 0 3px 8px #00000053;
+  --font-family: "Montserrat", serif;
+  --font-size: 16px;
+  --text-font: "Roboto", serif;
+  
+}
+
+body{
+  font-family: var(--font-family);
+  font-weight: 500;
+}
+
+*, 
+*::before, 
+*::after  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.test{
+  padding: 1rem;
+  background-color:var(--background-color);
+  
+
+  .navLink{
+    color: var(--primary-color);
+    text-decoration: none;
+    &:hover{
+      color:var(--secondary-color);
+    }
+  }
+}
+
+// .home-bg{
+//   background-color:var(--primary-color);
+// }
+
+// .home-bg{
+//   background-image: url(../assets/back-ground.png);
+//   background-size: cover;
+// }
+
+.home-bg{
+  background-image: url(../assets/bg2.png);
+  background-size: cover;
+}
+
+.other-bg{
+  background-image: url(../assets/bg18.png);
+  background-size: cover;
+}
+// .other-bg{
+//   background-color: none;
+// }
+
+@import "partials/navbar.scss";
+
+@import "partials/sidebar.scss";
+
+@import "partials/search.scss";
+
+@import "partials/login.scss";
+
+@import "partials/signup.scss";
+
+@import "partials/bag.scss";
+
+@import "partials/banner";
+
+@import "partials/checkout.scss";
+
+@import "partials/section1.scss";
+
+@import "partials/section2.scss";
+
+@import "partials/cardProducts.scss";
+
+@import "partials/singleProduct.scss";
+
+@import "partials/footer.scss";
+
+@import "partials/newsletter.scss";
+
+@import "partials/terms.scss";
+
+@import "partials/contactTheShop.scss";
+
+
+

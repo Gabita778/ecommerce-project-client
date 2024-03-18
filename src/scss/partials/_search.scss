@@ -1,0 +1,134 @@
+.search {
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.2rem;
+  position: absolute;
+  right: 0;
+  top: 7rem;
+  z-index: 98;
+  padding: 3rem;
+  background-color: white;
+
+  h2{
+    font-size: 1.5rem;
+  }
+
+  .search-container {
+    position: inherit;
+    width: 100%;
+    margin-top: 8rem;
+    line-height: 3rem;
+
+    .search-item {
+      font-size: 1rem;
+      line-height: 1.8rem;
+      cursor: pointer;
+    }
+
+    .search-info {
+      width: 70%;
+      font-size: 1rem;
+      margin: 1rem 0;
+      line-height: normal;
+    }
+  }
+
+  input {
+    width: 70%;
+    margin: 1rem;
+    border: transparent;
+    border-bottom: 1px solid black;
+    outline: none;
+    letter-spacing: 0.3rem;
+    font-size: smaller;
+  }
+
+  button {
+    position: inherit;
+    top: 4rem;
+    right: 4rem;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    &:hover{
+      color: gray;
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .search-container {
+    font-size: 1.5rem;
+    padding: 0 3rem;
+
+    .search-info{
+      width: 100vw;
+      padding-left: 2rem;
+ 
+    }
+
+    div{
+      margin-left: 1rem;
+      h2{margin-left: 1rem;}
+      input{font-size: 1rem;}
+      button{margin-left: 1rem;}
+    }
+    
+  }
+}
+
+@media screen and (min-width: 990px) {
+
+  .search {
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.2rem;
+    position: absolute;
+    right: -0.4rem;
+    top: 6.5rem;
+    z-index: 98;
+    background: linear-gradient(to right,
+        rgba(101, 100, 100, 0.387) 50vw,
+        white 50vw);
+
+    .search-container {
+      position: inherit;
+      width: 50vw;
+      height: 50vh;
+      right: -6rem;
+      margin: 8rem auto;
+      line-height: 3rem;
+      font-size: 1.5rem;
+
+      .search-info {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+      }
+
+      .trending{
+        line-height: 3rem;
+        font-size: 2rem;
+      }
+    }
+
+    input {
+      width: 60%;
+      border: transparent;
+      border-bottom: 1px solid black;
+      outline: none;
+      letter-spacing: 0.3rem;
+      font-size: smaller;
+    }
+
+    button {
+      position: inherit;
+      top: 4rem;
+      right: 4rem;
+      margin-bottom: 2rem;
+      background-color: transparent;
+      border: transparent;
+      cursor: pointer;
+    }
+
+  }
+}

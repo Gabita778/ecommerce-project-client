@@ -1,0 +1,410 @@
+.navbar-container {
+  width: 100%;
+  background-color: rgb(241, 28, 28);
+  background-color: transparent;
+  min-height: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+
+.navbarLeft {
+  display: flex;
+  gap: 80px;
+  list-style: none;
+}
+
+.navLeftList {
+  list-style: none;
+
+  li {
+    list-style: none;
+    position: relative;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.dropdown-list {
+  display: none;
+
+  .navbar-container {
+    width: 100%;
+    background-color: white;
+    min-height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+
+  .navbarLeft {
+    display: flex;
+    gap: 80px;
+    list-style: none;
+  }
+
+  .navLeftList {
+    list-style: none;
+
+    li {
+      list-style: none;
+      position: relative;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      color: grey;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .dropdown-list {
+    display: none;
+    li {
+      background-color: white;
+    }
+  }
+
+  .navbar-container .sidebar-icon {
+    height: 40px;
+    width: 35px;
+    display: none;
+    position: relative;
+  }
+
+  .navLeftList:hover .dropdown-list {
+    display: block;
+    width: 120vw;
+    height: 24vh;
+    padding: 0.5rem;
+    padding-left: 8rem;
+    position: absolute;
+    left: 0;
+    font-size: 40px;
+    background-color: white;
+    transition: 10s;
+  }
+
+  #men a {
+    margin-left: 1rem;
+  }
+
+  #women a {
+    margin-left: 9rem;
+  }
+
+  #gifts a {
+    margin-left: 18.6rem;
+  }
+
+  .navbarRight {
+    display: flex;
+    gap: 25px;
+    background-color: transparent;
+    list-style: none;
+  }
+
+  .navbarRight {
+    img {
+      width: 30px;
+    }
+
+    .searchLogo,
+    .loginLogo,
+    .cartLogo {
+      cursor: pointer;
+    }
+  }
+
+  .dropdown-list-right {
+    display: none;
+  }
+
+  .login-dropdown:hover .dropdown-list-right {
+    display: block;
+    background-color: white;
+    width: 100px;
+    min-height: 50px;
+    position: absolute;
+    right: 32px;
+    padding: 10px;
+  }
+
+  .navbarRight li {
+    font-size: 20px;
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .navbarRight a {
+    text-decoration: none;
+    padding-right: 20px;
+    color: grey;
+  }
+
+  .navbarRight a:hover {
+    text-decoration: underline;
+  }
+
+  .cart-count {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    margin-top: -15px;
+    margin-left: 15px;
+    border-radius: 50%;
+    font-size: 15px;
+    background-color: red;
+    color: white;
+  }
+
+  .navLogo {
+    display: flex;
+    position: fixed;
+    margin-top: 6rem;
+    left: 49.6vw;
+    transform: translate(-50%, -50%);
+    height: 118px;
+    z-index: 9999;
+  }
+
+  @media screen and (max-width: 1022px) {
+    .navbarRight {
+      display: flex;
+      margin-right: 12px;
+    }
+
+    .navbar-container {
+      height: 80px;
+    }
+
+    .navLogo {
+      display: flex;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+    }
+
+    .cart-count {
+      display: flex;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .navbar-container {
+      background-color: black;
+    }
+
+    .cartLogo {
+      filter: invert(1);
+    }
+    .navbar-container {
+      z-index: 99999;
+    }
+
+    .navbarRight {
+      gap: 15px;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .navbar-container {
+      padding: 4rem;
+    }
+    .navLeftList:hover .dropdown-list {
+      left: -4rem;
+    }
+  }
+
+  li {
+    background-color: white;
+    margin-left: -5rem;
+    padding-left: 4rem;
+  }
+}
+
+.navbar-container .sidebar-icon {
+  height: 40px;
+  width: 35px;
+  display: none;
+  position: relative;
+}
+
+.navLeftList:hover .dropdown-list {
+  display: block;
+  width: 110vw;
+  height: 24vh;
+  padding: 0.5rem;
+  padding-left: 8rem;
+  position: absolute;
+  left: 0;
+  font-size: 40px;
+  background-color: white;
+  transition: 10s;
+}
+
+#men a {
+  margin-left: 1rem;
+}
+
+#women a {
+  margin-left: 9rem;
+}
+
+#gifts a {
+  margin-left: 18.6rem;
+}
+
+.navbarRight {
+  display: flex;
+  gap: 25px;
+  background-color: transparent;
+  list-style: none;
+}
+
+.navbarRight {
+  img {
+    width: 30px;
+  }
+
+  .searchLogo,
+  .loginLogo,
+  .cartLogo {
+    cursor: pointer;
+  }
+}
+
+.dropdown-list-right {
+  display: none;
+}
+
+.login-dropdown:hover .dropdown-list-right {
+  display: block;
+  background-color: white;
+  width: 100px;
+  min-height: 50px;
+  position: absolute;
+  right: 32px;
+  padding: 10px;
+}
+
+.navbarRight li {
+  font-size: 20px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.navbarRight a {
+  text-decoration: none;
+  padding-right: 20px;
+  color: grey;
+}
+
+.navbarRight a:hover {
+  text-decoration: underline;
+}
+
+.cart-count {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  margin-top: -15px;
+  margin-left: 15px;
+  border-radius: 50%;
+  font-size: 15px;
+  background-color: red;
+  color: white;
+}
+
+.navLogo {
+  position: fixed;
+  margin-top: -5rem;
+  left: 49.6vw;
+  transform: translate(-50%, -50%);
+  height: 118px;
+  z-index: 9999;
+}
+
+@media screen and (max-width: 1022px) {
+  .navbarRight {
+    display: flex;
+    margin-right: 12px;
+  }
+
+  .navbar-container {
+    height: 80px;
+  }
+
+  .navLogo {
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+  }
+
+  .cart-count {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-container {
+    background-color: black;
+  }
+
+  .searchLogo,
+  .cartLogo {
+    filter: invert(1);
+  }
+  .navbar-container {
+    z-index: 200;
+  }
+
+  .navbarRight {
+    gap: 15px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .navbar-container {
+    padding: 4rem;
+  }
+
+  .navLeftList:hover .dropdown-list {
+    left: -4rem;
+  }
+}
+
+@media screen and (min-width: 2559px) {
+  .navLogo {
+    position: fixed;
+    top: 7rem;
+    left: 49.6vw;
+    // transform: translate(-50%, -50%);
+    height: 118px;
+    z-index: 9999;
+  }
+}
